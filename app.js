@@ -35,12 +35,12 @@ class Timer {
     return String(value).padStart(2, '0');
   }
 
-  insertValues(d, h, m, s) {
+  insertValues(days, hours, minutes, seconds) {
     const { dayTimer, hourTimer, minTimer, secTimer } = this.markup;
-    dayTimer.textContent = d;
-    hourTimer.textContent = h;
-    minTimer.textContent = m;
-    secTimer.textContent = s;
+    dayTimer.textContent = days;
+    hourTimer.textContent = hours;
+    minTimer.textContent = minutes;
+    secTimer.textContent = seconds;
   }
 }
 
